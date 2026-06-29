@@ -1,5 +1,14 @@
 # @mastra/ai-sdk
 
+## 1.6.1-alpha.0
+
+### Patch Changes
+
+- Fixed `chatRoute` and `handleChatStream` ignoring agent instructions and tools edited through the Agent Editor. When an editor is configured, the chat endpoint now applies the agent's stored overrides just like Studio does, instead of running the bare code-defined agent. Previously, instructions edited in the editor were silently dropped and the agent answered as if it had none. ([#18592](https://github.com/mastra-ai/mastra/pull/18592))
+
+- Updated dependencies [[`1b8728a`](https://github.com/mastra-ai/mastra/commit/1b8728a57fd844205a452b0b4216d20ff60c784a)]:
+  - @mastra/core@1.48.0-alpha.3
+
 ## 1.6.0
 
 ### Minor Changes

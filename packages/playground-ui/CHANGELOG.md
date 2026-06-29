@@ -1,5 +1,15 @@
 # @mastra/playground-ui
 
+## 37.0.1-alpha.3
+
+### Patch Changes
+
+- Updated dependencies [[`1b8728a`](https://github.com/mastra-ai/mastra/commit/1b8728a57fd844205a452b0b4216d20ff60c784a)]:
+  - @mastra/core@1.48.0-alpha.3
+  - @mastra/client-js@1.28.1-alpha.3
+  - @mastra/memory@1.21.3-alpha.0
+  - @mastra/react@1.2.1-alpha.3
+
 ## 37.0.1-alpha.2
 
 ### Patch Changes

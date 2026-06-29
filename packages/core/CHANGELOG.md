@@ -1,5 +1,14 @@
 # @mastra/core
 
+## 1.48.0-alpha.3
+
+### Patch Changes
+
+- Fix in-memory workflow storage `getWorkflowRunById` returning `null` when `workflowName` is omitted. `workflowName` is optional in the storage contract and the pg/libsql adapters match by `runId` alone when it is not provided, but the in-memory store always compared `workflow_name === workflowName`, which never matched for an undefined name. It now matches by `runId`, only filters by `workflowName` when provided, and returns the most recent run for parity with the persistent adapters. Closes #18585. ([#18586](https://github.com/mastra-ai/mastra/pull/18586))
+
+- Updated dependencies [[`9feeaa0`](https://github.com/mastra-ai/mastra/commit/9feeaa0f9a1af07039e5b4f22b932b0cb18617e8)]:
+  - @mastra/schema-compat@1.3.2-alpha.0
+
 ## 1.48.0-alpha.2
 
 ### Patch Changes

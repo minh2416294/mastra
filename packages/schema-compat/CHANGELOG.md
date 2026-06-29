@@ -1,5 +1,11 @@
 # @mastra/schema-compat
 
+## 1.3.2-alpha.0
+
+### Patch Changes
+
+- Fix inverted date constraint descriptions in the Zod v4 schema handler. `z.date().min()` and `z.date().max()` were described with their bounds swapped (a lower bound was labelled "older than" and an upper bound "newer than"), so the schema sent to the model stated the opposite and impossible constraint. The handler now matches Zod semantics and the existing v3 handler. Closes #18581. ([#18582](https://github.com/mastra-ai/mastra/pull/18582))
+
 ## 1.3.1
 
 ### Patch Changes
